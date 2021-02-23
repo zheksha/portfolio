@@ -1,2 +1,2 @@
-# Remaking Portfolio Project for zheksha.com
+# Remaking Portfolio Project for zheksha.com 👨‍💻
 
