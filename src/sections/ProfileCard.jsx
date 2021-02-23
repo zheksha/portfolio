@@ -3,7 +3,7 @@ import avatar from "../images/users/Profile-pic.jpg";
 
 const ProfileCard = () => {
   return (
-    <div className="profile-card row bg-dark p-3 text-center d-flex flex-column align-items-center ">
+    <div className="profile-card row bg-dark py-5 px-4  text-center d-flex flex-column align-items-center ">
       <div className="avatar d-flex">
         <img src={avatar} alt="avatar" />
       </div>
