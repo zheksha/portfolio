@@ -41,7 +41,7 @@ const AboutMe = () => {
         </div>
       </div>
       <ReactTooltip id="download" place="top" effect="solid">
-        Download CV in .pdf file
+        Download CV in .pdf file <i className="ml-1 far fa-file-pdf"></i>
       </ReactTooltip>
     </div>
   );

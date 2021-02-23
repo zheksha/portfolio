@@ -5,6 +5,7 @@ import MyWorks from "./sections/MyWorks";
 import ContactMe from "./sections/ContactMe";
 import "./styles/style.scss";
 import Education from "./sections/Education";
+import Footer from "./sections/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Education />
             <MyWorks />
             <ContactMe />
+            <Footer />
           </div>
         </div>
       </div>
