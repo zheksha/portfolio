@@ -1,8 +1,8 @@
 import React from "react";
 import ReactTooltip from "react-tooltip";
-import photshop from "../images/icons/icon-photshop.svg";
-import illustrator from "../images/icons/icon-illustrator.svg";
-import indesign from "../images/icons/icon-indesign.svg";
+import photshop from "../images/icons/adobe-photoshop-logo.svg";
+import illustrator from "../images/icons/adobe-illustrator.svg";
+import indesign from "../images/icons/adobe-indesign-logo.svg";
 
 const Education = () => {
   const skills = [
@@ -20,16 +20,10 @@ const Education = () => {
     "indesign",
   ];
 
-  const toolTipBlock = skills.map((skill) => (
-    <ReactTooltip id={skill} place="top" effect="solid">
-      {skill.toUpperCase()}
-    </ReactTooltip>
-  ));
-  console.log(toolTipBlock);
   return (
     <div className="education  m-0 p-3 bg-white">
       <div className="row">
-        <h4 class="header-title mt-2 mb-3">Education & Skills</h4>
+        <h4 className="header-title mt-2 mb-3">Education & Skills</h4>
 
         <div className="col-sm-6 ">
           <div className="d-flex flex-column align-items-start">
@@ -37,11 +31,11 @@ const Education = () => {
               <i className="fas fa-graduation-cap"></i>
               <h5>Education</h5>
             </div>
-            <div class="timeline">
-              <div class="time-item">
-                <div class="item-info">
-                  <div class="font-14">2004 - 2009</div>
-                  <h5 class="my-1 text-dark">High School</h5>
+            <div className="timeline">
+              <div className="time-item">
+                <div className="item-info">
+                  <div className="font-14">2004 - 2009</div>
+                  <h5 className="my-1 text-dark">High School</h5>
                   <p className="m-0 p-0">Secondary Education</p>
                   <a
                     className="m-0"
@@ -51,10 +45,10 @@ const Education = () => {
                     <i className="fas fa-link"></i> Link to school website
                   </a>
                 </div>
-                <div class="time-item">
-                  <div class="item-info">
-                    <div class="font-14">2009 - 2013</div>
-                    <h5 class="my-1 text-dark">
+                <div className="time-item">
+                  <div className="item-info">
+                    <div className="font-14">2009 - 2013</div>
+                    <h5 className="my-1 text-dark">
                       Kyrgyz State Polytech University
                     </h5>
                     <p className="p-0 m-0">
@@ -79,11 +73,13 @@ const Education = () => {
               <i className="fas fa-briefcase"></i>
               <h5>Experience</h5>
             </div>
-            <div class="timeline">
-              <div class="time-item">
-                <div class="item-info">
-                  <div class="font-14">2011-2013</div>
-                  <h5 class="my-1 text-dark">Graphic designer at Kutaalam</h5>
+            <div className="timeline">
+              <div className="time-item">
+                <div className="item-info">
+                  <div className="font-14">2011-2013</div>
+                  <h5 className="my-1 text-dark">
+                    Graphic designer at Kutaalam
+                  </h5>
                   <p className="m-0 p-0">Secondary Education</p>
                   <a
                     className="m-0"
@@ -93,10 +89,12 @@ const Education = () => {
                     <i className="fas fa-link"></i> Link to company website
                   </a>
                 </div>
-                <div class="time-item">
-                  <div class="item-info">
-                    <div class="font-14">2011 - 2013</div>
-                    <h5 class="my-1 text-dark">Graphic designer at Kutaalam</h5>
+                <div className="time-item">
+                  <div className="item-info">
+                    <div className="font-14">2011 - 2013</div>
+                    <h5 className="my-1 text-dark">
+                      Graphic designer at Kutaalam
+                    </h5>
                     <p className="p-0 m-0">
                       Bachelors of Computer technology and automated systems
                     </p>
@@ -116,7 +114,12 @@ const Education = () => {
       </div>
 
       <div className="row mt-4 d-flex">
-        <div className=" d-lg-flex justify-content-start">
+        <div className=" d-lg-flex justify-content-start flex-wrap">
+          {skills.map((skill, index) => (
+            <ReactTooltip key={index} id={skill} place="top" effect="solid">
+              {skill.toUpperCase()}
+            </ReactTooltip>
+          ))}
           <button className="btn btn-link p-0" data-tip data-for="react">
             <i className="fab fa-react"></i>
           </button>
@@ -144,8 +147,6 @@ const Education = () => {
           <button className="btn btn-link p-0" data-tip data-for="aws">
             <i className="fab fa-aws"></i>
           </button>
-        </div>
-        <div>
           <button className="btn btn-link p-0" data-tip data-for="photoshop">
             <img className="fab fa-adobe " src={photshop} alt="photshop" />
           </button>
@@ -157,11 +158,6 @@ const Education = () => {
           </button>
         </div>
       </div>
-      {skills.map((skill) => (
-        <ReactTooltip id={skill} place="top" effect="solid">
-          {skill.toUpperCase()}
-        </ReactTooltip>
-      ))}
     </div>
   );
 };
