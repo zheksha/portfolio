@@ -1,0 +1,51 @@
+@import "variables";
+@import "buttons";
+@import "background-color";
+@import "general";
+@import "text-color";
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+  }
+}
+
+.profile-card {
+  a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+}
+
+.aboutme {
+  position: relative;
+}
+
+.education {
+  position: relative;
+
+  .fa-briefcase,
+  .fa-graduation-cap {
+    font-size: 2rem;
+  }
+
+  .fab,
+  .icon-mongodb {
+    font-size: 2.4rem;
+    margin: 0.5rem 1rem;
+  }
+
+  .fa-adobe {
+    width: 3rem;
+    margin: 0;
+  }
+}
