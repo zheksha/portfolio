@@ -3,16 +3,16 @@ import ProfileCard from "./sections/ProfileCard";
 import AboutMe from "./sections/AboutMe";
 import MyWorks from "./sections/MyWorks";
 import ContactMe from "./sections/ContactMe";
-import "./styles/style.scss";
 import Education from "./sections/Education";
 import Footer from "./sections/Footer";
+import "./styles/style.scss";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
       <div className="container mt-4">
-        <div className="row">
+        <div className="row content-body">
           <div className="col-md-3">
             <ProfileCard />
           </div>

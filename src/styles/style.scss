@@ -3,23 +3,27 @@
 @import "background-color";
 @import "general";
 @import "text-color";
+@import "breakpoints";
 
-.avatar {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  border-radius: 50%;
-  padding: 0;
-  margin-bottom: 0.5rem;
-  align-items: center;
-  justify-content: center;
-
-  img {
-    width: 100%;
-  }
+.content-body {
+  margin-top: 3.5rem;
 }
 
 .profile-card {
+  .avatar {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+    }
+  }
   a {
     text-decoration: none;
     color: aliceblue;
@@ -28,6 +32,9 @@
 
 .aboutme {
   position: relative;
+  p {
+    font-weight: 600 !important;
+  }
 }
 
 .education {

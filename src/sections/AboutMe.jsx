@@ -10,10 +10,9 @@ const AboutMe = () => {
         <div className="col-md-6 pr-5 pb-3">
           <h4 className="text-primary font-weight-bold">I'm Ulan Z.</h4>
           <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed.
+            Adaptable professional with experience and proven knowledge of web
+            design and web platform development. Aiming to high standards of web
+            design, user experience and speed.
           </p>
           <button
             className="btn btn-sm btn-soft-primary"
@@ -26,7 +25,7 @@ const AboutMe = () => {
         <div className="col-md-6">
           <p>
             <span className="personal-detail-title">Name</span>
-            <span className="personal-detail-info">Ulan Zhekshenbek uulu</span>
+            <span className="personal-detail-info">Ulan Z.</span>
           </p>
           <p>
             <span className="personal-detail-title">Spoken languages</span>
