@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
+import QuotesCarousel from "../components/QuotesCarousel";
 import brand from "../images/portfolio/1.jpg";
 
 const MyWorks = () => {
-  const [filtered, setFitered] = useState("all");
+  const [filtered, setFiltered] = useState("all");
 
   const uiux = (
     <React.Fragment key="uiux">
@@ -44,54 +45,14 @@ const MyWorks = () => {
       <div className="row">
         <h4 className="header-title mt-2 mb-3">My Works and Review</h4>
         <div className="col-md-6 text-center d-flex flex-column justify-content-center align-items-center">
-          <h5 className="m-0 ">
-            <i className="fas fa-quote-right"></i>
-          </h5>
-          <Carousel
-            className="carousel"
-            indicators={false}
-            controls={true}
-            interval={5000}
-            pause="hover"
-          >
-            <Carousel.Item className="slide-1">
-              <div className="p-2">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  non purus nisi. Morbi blandit dignissim ultrices. Praesent sit
-                  amet nulla urna. Vestibulum viverra ligula odio, ac semper
-                  sapien bibendum at.
-                </p>
-              </div>
-            </Carousel.Item>
-            <Carousel.Item className="slide-2">
-              <div className="p-2">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  non purus nisi. Morbi blandit dignissim ultrices. Praesent sit
-                  amet nulla urna. Vestibulum viverra ligula odio, ac semper
-                  sapien bibendum at.
-                </p>
-              </div>
-            </Carousel.Item>
-            <Carousel.Item className="slide-3">
-              <div className="p-2">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  non purus nisi. Morbi blandit dignissim ultrices. Praesent sit
-                  amet nulla urna. Vestibulum viverra ligula odio, ac semper
-                  sapien bibendum at.
-                </p>
-              </div>
-            </Carousel.Item>
-          </Carousel>
+          <QuotesCarousel />
         </div>
         <div className="col-md-6">
           <div className="row">
             <ul className="list-inline">
               <li className="list-inline-item">
                 <button
-                  onClick={() => setFitered("all")}
+                  onClick={() => setFiltered("all")}
                   name="all"
                   className="btn btn-link"
                 >
@@ -100,7 +61,7 @@ const MyWorks = () => {
               </li>
               <li className="list-inline-item">
                 <button
-                  onClick={() => setFitered("uiux")}
+                  onClick={() => setFiltered("uiux")}
                   name="ui-ux"
                   className="btn btn-link"
                 >
@@ -109,7 +70,7 @@ const MyWorks = () => {
               </li>
               <li className="list-inline-item">
                 <button
-                  onClick={() => setFitered("front")}
+                  onClick={() => setFiltered("front")}
                   name="front"
                   className="btn btn-link"
                 >
@@ -118,7 +79,7 @@ const MyWorks = () => {
               </li>
               <li className="list-inline-item">
                 <button
-                  onClick={() => setFitered("back")}
+                  onClick={() => setFiltered("back")}
                   name="back"
                   className="btn btn-link"
                 >
@@ -127,7 +88,7 @@ const MyWorks = () => {
               </li>
               <li className="list-inline-item">
                 <button
-                  onClick={() => setFitered("des")}
+                  onClick={() => setFiltered("des")}
                   name="des"
                   className="btn btn-link"
                 >
@@ -136,7 +97,7 @@ const MyWorks = () => {
               </li>
             </ul>
           </div>
-          <div className="row d-flex flex-wrap p-3">
+          <div className="row d-flex flex-wrap p-3 ">
             {filtered !== "all"
               ? all.filter((el) => el.key === filtered)
               : all.map((el) => el)}

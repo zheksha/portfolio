@@ -18,6 +18,7 @@ const Education = () => {
     "photoshop",
     "illustrator",
     "indesign",
+    "figma",
   ];
 
   return (
@@ -157,6 +158,8 @@ const Education = () => {
         </div>
       </div>
 
+      {/**********  List of technologies **********/}
+
       <div className="row mt-4 d-flex">
         <div className=" d-lg-flex justify-content-start flex-wrap">
           {skills.map((skill, index) => (
@@ -190,6 +193,9 @@ const Education = () => {
           </button>
           <button className="btn btn-link p-0" data-tip data-for="aws">
             <i className="fab fa-aws"></i>
+          </button>
+          <button className="btn btn-link p-0" data-tip data-for="figma">
+            <i className="fab fa-figma"></i>
           </button>
           <button className="btn btn-link p-0" data-tip data-for="photoshop">
             <img className="fab fa-adobe " src={photshop} alt="photshop" />

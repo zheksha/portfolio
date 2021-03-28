@@ -3,51 +3,74 @@ import React from "react";
 const ContactMe = () => {
   return (
     <div className="contactme  mt-3 p-3 pb-5 bg-white ">
-      <form>
+      <form
+        target="blank"
+        action="https://formsubmit.co/zheksha@gmail.com"
+        method="POST"
+      >
         <h4 className="header-title mt-2 mb-3">Contact me</h4>
         <div className="row ">
           <div className="col-md-4 mt-3">
             <div className="row ">
-              <div className="d-flex align-items-top">
-                <div className="d-flex align-items-center">
-                  <i className="fas fa-phone-volume"></i>
+              <a href="tel:+1 773 234 8048">
+                <div className="d-flex align-items-top">
+                  <div className="d-flex align-items-center">
+                    <i className="fas fa-phone-volume"></i>
+                  </div>
+                  <div className="d-flex flex-column ml-3 ">
+                    <h5 className="p-0 mt-0 mb-1">Call me:</h5>
+                    <span>+1 773 234 8048</span>
+                  </div>
                 </div>
-                <div className="d-flex flex-column ml-3 ">
-                  <h5 className="p-0 mt-0 mb-1">Call me:</h5>
-                  <span>+1 123 4567 890</span>
-                </div>
-              </div>
+              </a>
             </div>
 
-            <div className="row py-4">
-              <div className="d-flex align-items-top">
-                <div className="d-flex align-items-center">
-                  <i className="fas fa-envelope"></i>
-                </div>
-                <div className="d-flex flex-column ml-3 ">
-                  <h5 className="p-0 mt-0 mb-1">Mail me:</h5>
-                  <span>zheksha@gmail.com</span>
+            <a href="mailto:zheksha@gmail.com">
+              <div className="row py-4">
+                <div className="d-flex align-items-top">
+                  <div className="d-flex align-items-center">
+                    <i className="fas fa-envelope"></i>
+                  </div>
+                  <div className="d-flex flex-column ml-3 ">
+                    <h5 className="p-0 mt-0 mb-1">Mail me:</h5>
+                    <span>zheksha@gmail.com</span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div className="col-md-8">
-            <div className="row">
+            <div className="row ">
               <div className="col-md-6 form-group">
                 <label className="mb-1">Name</label>
-                <input type="text" required className="form-control" />
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  className="form-control"
+                />
               </div>
 
               <div className="col-md-6 form-group">
                 <label className="mb-1">Email address</label>
-                <input type="email" required className="form-control" />
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  className="form-control"
+                />
               </div>
             </div>
             <div className="row mt-3">
               <div className="col-md-12 form-group">
-                <label className="mb-1">Email address</label>
-                <textarea rows="4" type="email" className="form-control" />
+                <label className="mb-1">Your message</label>
+                <textarea
+                  rows="4"
+                  type="text"
+                  name="message"
+                  className="form-control"
+                />
               </div>
             </div>
             <div className="row">
