@@ -28,7 +28,7 @@ const AboutMe = () => {
             <span className="personal-detail-info">Ulan Z.</span>
           </p>
           <p>
-            <span className="personal-detail-title">Spoken languages</span>
+            <span className="personal-detail-title">Languages</span>
             <span className="personal-detail-info">
               English - Turkish - Russian - Kyrgyz
             </span>

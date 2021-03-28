@@ -39,8 +39,28 @@ const Education = () => {
 
               <div className="time-item">
                 <div className="item-info">
+                  <div className="font-14">2009 - 2013</div>
+                  <h5 className="my-1 text-dark">
+                    Kyrgyz State Polytech University
+                  </h5>
+                  <p className="p-0 mb-2">
+                    Bachelors of Computer technology and automated systems
+                  </p>
+                  <a
+                    className="m-0"
+                    target="blank"
+                    href="https://kstu.kg/en/bokovoe-menju/faculties/faculty-of-information-technology"
+                  >
+                    <i className="fas fa-link"></i> Link to university website
+                  </a>
+                </div>
+              </div>
+              {/**********  2 **********/}
+
+              <div className="time-item">
+                <div className="item-info">
                   <div className="font-14">2004 - 2009</div>
-                  <h5 className="my-1 text-dark">High School</h5>
+                  <h5 className="my-1 text-dark">M. Subakojoev High School</h5>
                   <p className="mb-2 p-0">Secondary Education</p>
                   <a
                     className="m-0"
@@ -49,27 +69,6 @@ const Education = () => {
                   >
                     <i className="fas fa-link"></i> Link to school website
                   </a>
-                </div>
-
-                {/**********  2 **********/}
-
-                <div className="time-item">
-                  <div className="item-info">
-                    <div className="font-14">2009 - 2013</div>
-                    <h5 className="my-1 text-dark">
-                      Kyrgyz State Polytech University
-                    </h5>
-                    <p className="p-0 mb-2">
-                      Bachelors of Computer technology and automated systems
-                    </p>
-                    <a
-                      className="m-0"
-                      target="blank"
-                      href="https://kstu.kg/en/bokovoe-menju/faculties/faculty-of-information-technology"
-                    >
-                      <i className="fas fa-link"></i> Link to university website
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
