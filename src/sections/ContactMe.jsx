@@ -92,15 +92,7 @@ const ContactMe = () => {
         data-type="horizontal"
         data-theme="light"
         data-vanity="zheksha"
-      >
-        <a
-          class="LI-simple-link"
-          href="https://www.linkedin.com/in/zheksha?trk=profile-badge"
-          target="blank"
-        >
-          Ulan Z.
-        </a>
-      </div>
+      ></div>
     </div>
   );
 };

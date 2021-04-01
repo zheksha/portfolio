@@ -18,30 +18,37 @@ const QuotesCarousel = () => {
         <Carousel.Item className="slide-1">
           <div className="p-2">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non
-              purus nisi. Morbi blandit dignissim ultrices. Praesent sit amet
-              nulla urna. Vestibulum viverra ligula odio, ac semper sapien
-              bibendum at.
+              Great job on my project - performed the design changes to meet my
+              exact requirements.
+            </p>
+            <p className="text-info">
+              <em>
+                crock2000, <span>studio.envato.com</span>
+              </em>
             </p>
           </div>
         </Carousel.Item>
         <Carousel.Item className="slide-2">
           <div className="p-2">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non
-              purus nisi. Morbi blandit dignissim ultrices. Praesent sit amet
-              nulla urna. Vestibulum viverra ligula odio, ac semper sapien
-              bibendum at.
+              Awesome work, went above and beyond, very happy with the output.
+              <p className="text-info">
+                <em>
+                  Kwuest, <span>studio.envato.com</span>
+                </em>
+              </p>
             </p>
           </div>
         </Carousel.Item>
         <Carousel.Item className="slide-3">
           <div className="p-2">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non
-              purus nisi. Morbi blandit dignissim ultrices. Praesent sit amet
-              nulla urna. Vestibulum viverra ligula odio, ac semper sapien
-              bibendum at.
+              Zheksha was very helpful and provided an excellent service.
+              <p className="text-info">
+                <em>
+                  nlbrownjr, <span>studio.envato.com</span>
+                </em>
+              </p>
             </p>
           </div>
         </Carousel.Item>

@@ -35,6 +35,14 @@
   p {
     font-weight: 600 !important;
   }
+
+  .name-story {
+    p {
+      font-weight: 400 !important;
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
 
 .education {
@@ -59,46 +67,78 @@
 
 .myworks {
   position: relative;
-  transition: all 1s;
 
-  .portfolio-image {
-    padding: 2px;
-    width: 25%;
-    height: 25%;
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s;
+  .image-box {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+
+    .image {
+      width: 100%;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.2) rotate(-5deg);
+      }
+    }
   }
 
-  .animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s;
-  }
-  @-webkit-keyframes animatebottom {
-    from {
-      bottom: -50px;
-      opacity: 0;
+  .description-box {
+    .description-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: none;
+      margin-bottom: 10px;
     }
-    to {
-      bottom: 0px;
-      opacity: 1;
+    .description-text {
+      margin-top: 13px;
     }
-  }
-  @keyframes animatebottom {
-    from {
-      bottom: -50px;
-      opacity: 0;
-    }
-    to {
-      bottom: 0;
-      opacity: 1;
+
+    .tech-stack {
+      display: block;
+      margin-top: 10px;
+      font-weight: 600;
     }
   }
+
+  // .portfolio-image {
+  //   padding: 2px;
+  //   width: 25%;
+  //   height: 25%;
+  //   position: relative;
+  //   -webkit-animation-name: animatebottom;
+  //   -webkit-animation-duration: 1s;
+  //   animation-name: animatebottom;
+  //   animation-duration: 1s;
+  // }
+
+  // .animate-bottom {
+  //   position: relative;
+  //   -webkit-animation-name: animatebottom;
+  //   -webkit-animation-duration: 1s;
+  //   animation-name: animatebottom;
+  //   animation-duration: 1s;
+  // }
+  // @-webkit-keyframes animatebottom {
+  //   from {
+  //     bottom: -50px;
+  //     opacity: 0;
+  //   }
+  //   to {
+  //     bottom: 0px;
+  //     opacity: 1;
+  //   }
+  // }
+  // @keyframes animatebottom {
+  //   from {
+  //     bottom: -50px;
+  //     opacity: 0;
+  //   }
+  //   to {
+  //     bottom: 0;
+  //     opacity: 1;
+  //   }
+  // }
 }
 
 .contactme {
@@ -112,5 +152,74 @@
 
   textarea {
     height: 5rem;
+  }
+}
+
+.business-card {
+  padding: 0 7px;
+  table {
+    margin: 0 auto;
+    .info {
+      font-size: 2.4rem;
+      padding: 0;
+    }
+    text-align: center;
+
+    td {
+      position: relative;
+      padding: 1px;
+    }
+    .me {
+      border-bottom: 1px solid #777 !important;
+    }
+    .me-down {
+      border-left: 1px solid #777 !important;
+      border-right: 1px solid #777 !important;
+    }
+    .website {
+      border-bottom: 1px solid #777 !important;
+    }
+    .website-down {
+      border-left: 1px solid #777 !important;
+      border-right: 1px solid #777 !important;
+    }
+
+    .social-row {
+      border-left: 1px solid #777 !important;
+      border-right: 1px solid #777 !important;
+    }
+    .email {
+      border-top: 1px solid #777 !important;
+    }
+
+    .social {
+      border-top: 1px solid #777 !important;
+    }
+    .social-up {
+      border-left: 1px solid #777 !important;
+      border-right: 1px solid #777 !important;
+    }
+
+    .social-up-row {
+      border-left: 1px solid #777 !important;
+      border-right: 1px solid #777 !important;
+    }
+  }
+  .vl-up {
+    border-left: 1px solid #777;
+    height: 8px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+  }
+
+  .vl-down {
+    border-left: 1px solid #777;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    bottom: 0;
   }
 }

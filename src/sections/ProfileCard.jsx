@@ -17,7 +17,7 @@ const ProfileCard = () => {
           </button>
           <button className="btn my-1   telegram text-light m-0">
             <i className="fab fa-telegram-plane"></i> :{" "}
-            <a className="btn-link" href="https://t.me/zheksha" target="blank">
+            <a href="https://t.me/zheksha" target="blank">
               t.me/zheksha
             </a>
           </button>

@@ -26,55 +26,6 @@ const Education = () => {
       <div className="row">
         <h4 className="header-title mt-2 mb-3">Education & Skills</h4>
 
-        {/* EDUCATION */}
-
-        <div className="col-sm-6 ">
-          <div className="d-flex flex-column align-items-start">
-            <div className="d-flex flex-column align-items-center">
-              <i className="fas fa-graduation-cap"></i>
-              <h5>Education</h5>
-            </div>
-            <div className="timeline">
-              {/**********  1 **********/}
-
-              <div className="time-item">
-                <div className="item-info">
-                  <div className="font-14">2009 - 2013</div>
-                  <h5 className="my-1 text-dark">
-                    Kyrgyz State Polytech University
-                  </h5>
-                  <p className="p-0 mb-2">
-                    Bachelors of Computer technology and automated systems
-                  </p>
-                  <a
-                    className="m-0"
-                    target="blank"
-                    href="https://kstu.kg/en/bokovoe-menju/faculties/faculty-of-information-technology"
-                  >
-                    <i className="fas fa-link"></i> Link to university website
-                  </a>
-                </div>
-              </div>
-              {/**********  2 **********/}
-
-              <div className="time-item">
-                <div className="item-info">
-                  <div className="font-14">2004 - 2009</div>
-                  <h5 className="my-1 text-dark">M. Subakojoev High School</h5>
-                  <p className="mb-2 p-0">Secondary Education</p>
-                  <a
-                    className="m-0"
-                    target="blank"
-                    href="https://sapat.edu.kg/en/glavnaya-english/"
-                  >
-                    <i className="fas fa-link"></i> Link to school website
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* WORK EXPERIENCE */}
 
         <div className="col-sm-6 ">
@@ -129,6 +80,13 @@ const Education = () => {
                   >
                     <i className="fas fa-link"></i> CreativeMarket
                   </a>
+                  <a
+                    className="m-0 ml-2"
+                    target="blank"
+                    href="https://studio.envato.com/users/zheksha"
+                  >
+                    <i className="fas fa-link"></i> Envato Studio
+                  </a>
                 </div>
               </div>
 
@@ -149,6 +107,62 @@ const Education = () => {
                     href="http://infomar1.beget.tech/en/kutaalam-eng/"
                   >
                     <i className="fas fa-link"></i> Link to company website
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* EDUCATION */}
+
+        <div className="col-sm-6 ">
+          <div className="d-flex flex-column align-items-start">
+            <div className="d-flex flex-column align-items-center">
+              <i className="fas fa-graduation-cap"></i>
+              <h5>Education</h5>
+            </div>
+            {/*
+            <p>
+              <span className="personal-detail-title">Languages</span>
+              <span className="personal-detail-info">
+                English - Turkish - Russian - Kyrgyz
+              </span>
+            </p>*/}
+            <div className="timeline">
+              {/**********  1 **********/}
+
+              <div className="time-item">
+                <div className="item-info">
+                  <div className="font-14">2009 - 2013</div>
+                  <h5 className="my-1 text-dark">
+                    Kyrgyz State Polytech University
+                  </h5>
+                  <p className="p-0 mb-2">
+                    Computer technology and automated systems
+                  </p>
+                  <a
+                    className="m-0"
+                    target="blank"
+                    href="https://kstu.kg/en/bokovoe-menju/faculties/faculty-of-information-technology"
+                  >
+                    <i className="fas fa-link"></i> Link to university website
+                  </a>
+                </div>
+              </div>
+              {/**********  2 **********/}
+
+              <div className="time-item">
+                <div className="item-info">
+                  <div className="font-14">2004 - 2009</div>
+                  <h5 className="my-1 text-dark">M. Subakojoev High School</h5>
+                  <p className="mb-2 p-0">Secondary Education</p>
+                  <a
+                    className="m-0"
+                    target="blank"
+                    href="https://sapat.edu.kg/en/glavnaya-english/"
+                  >
+                    <i className="fas fa-link"></i> Link to school website
                   </a>
                 </div>
               </div>
