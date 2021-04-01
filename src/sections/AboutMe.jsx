@@ -7,7 +7,7 @@ const AboutMe = () => {
       <div className="row">
         <h4 className="header-title mt-2 mb-3">Hello World !</h4>
 
-        <div className="col-md-6 pr-5 pb-3">
+        <div className="col-xl-6 pr-5 pb-3">
           <h4 className="text-primary font-weight-bold">I'm Ulan Z.</h4>
           <p>
             Adaptable professional with experience and proven knowledge of web
@@ -22,7 +22,7 @@ const AboutMe = () => {
             <i className="fas fa-file-download"></i> Download CV
           </button>
         </div>
-        <div className="col-md-6">
+        <div className="col-xl-6">
           <div className="business-card">
             <table>
               <tr>

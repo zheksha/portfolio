@@ -71,6 +71,9 @@ const MyWorks = () => {
             </p>
           </div>
         </div>
+        <div className="row mt-3">
+          <p>...more projects under construction</p>
+        </div>
 
         <div className="row mt-5 text-center d-flex flex-column justify-content-center align-items-center">
           <QuotesCarousel />

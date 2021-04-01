@@ -174,6 +174,10 @@ const Education = () => {
       {/**********  List of technologies **********/}
 
       <div className="row mt-4 d-flex">
+        <div className="d-flex flex-column ">
+          <h5>Technical Skill Set</h5>
+        </div>
+
         <div className=" d-lg-flex justify-content-start flex-wrap">
           {skills.map((skill, index) => (
             <ReactTooltip key={index} id={skill} place="top" effect="solid">
