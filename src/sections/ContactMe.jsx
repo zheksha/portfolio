@@ -5,7 +5,7 @@ const ContactMe = () => {
     <div className="contactme  mt-3 p-3 pb-5 bg-white ">
       <form
         target="blank"
-        action="https://formsubmit.co/zheksha@gmail.com"
+        action="https://formsubmit.co/ulan@zheksha.com"
         method="POST"
       >
         <h4 className="header-title mt-2 mb-3">Contact me</h4>

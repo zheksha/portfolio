@@ -5,6 +5,7 @@ import MyWorks from "./sections/MyWorks";
 import ContactMe from "./sections/ContactMe";
 import Education from "./sections/Education";
 import Footer from "./sections/Footer";
+// import "./styles/bootstrap.min.css";
 import "./styles/style.scss";
 
 function App() {
